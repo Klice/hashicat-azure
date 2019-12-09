@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
 }
 
 module "web_app_container" {
-  source = "app.terraform.io/YOURORGNAME/web-app-container/azurerm"
+  source = "app.terraform.io/MaxC_ORG/web-app-container/azurerm"
   version = "2.2.1"
   name = "${var.prefix}-app"
   port = "80"
